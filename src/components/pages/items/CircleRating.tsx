@@ -1,16 +1,16 @@
 import React, {useState} from 'react';
 
-export const Rating = () => {
+export const CircleRating = () => {
   let [rating, setRating] = useState(0);
   
   type circleType = {
 	item: string
-	rating: any
+	rating: boolean
 	value: 1 | 2 | 3 | 4 | 5
 	cb: (value: number) => void
   }
   
-  const retingator = (value: any) => {
+  const retingator = (value: number) => {
 	setRating(value)
   }
   

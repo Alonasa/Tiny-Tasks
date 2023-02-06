@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Rating} from './items/Rating';
+import {CircleRating} from './items/CircleRating';
 
 type ratingType = {
   value: any
@@ -7,7 +7,7 @@ type ratingType = {
   rating: 1 | 2 | 3 | 4 | 5
 }
 
-export const PageTwo = () => {
+export const Rating = () => {
   let [rating, setRating] = useState<number>(0);
   
   const Empty = () => {
@@ -41,7 +41,7 @@ export const PageTwo = () => {
 		<Heart cb={setRating} value={rating > 4} rating={5}/>
 	  </div>
 	  <div>
-		<Rating/>
+		<CircleRating/>
 	  
 	  </div>
 	</div>

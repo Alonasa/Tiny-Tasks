@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-export const PageOne = () => {
+export const Switcher = () => {
     const [button, setButton] = useState<boolean | undefined>(undefined)
     const onHandler = () => {
       setButton(true)

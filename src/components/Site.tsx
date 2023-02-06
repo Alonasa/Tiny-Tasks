@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Site.module.css'
-import {PageOne} from './pages/PageOne';
+import {Switcher} from './pages/Switcher';
 import {Routes, Route, NavLink, Navigate} from 'react-router-dom';
-import {PageTwo} from './pages/PageTwo';
+import {Rating} from './pages/Rating';
 import {PageThree} from './pages/PageThree';
 
 
@@ -18,9 +18,9 @@ export const Site = () => {
                 </div>
                 <div className={styles.content}>
                   <Routes>
-                    <Route path={'/'} element={<Navigate  to={'/PageOne'}/>}/>
-                    <Route path={'page1'} element={<PageOne/>}/>
-                    <Route path={'page2'} element={<PageTwo/>}/>
+                    <Route path={'/'} element={<Navigate  to={'/Switcher'}/>}/>
+                    <Route path={'page1'} element={<Switcher/>}/>
+                    <Route path={'page2'} element={<Rating/>}/>
                     <Route path={'page3'} element={<PageThree/>}/>
                   </Routes>
                 </div>
